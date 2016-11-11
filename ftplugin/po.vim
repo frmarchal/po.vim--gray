@@ -339,7 +339,7 @@ fu! <SID>PoFileTimestamp()
 	" only update time stamp for unfuzzy translations
 	normal! 1G
 	/^msgid
-	if (!search('^#, fuzzy$', 'b')) && search('^"PO-Revision-Date:')
+	if (!search('^#, fuzzy$', 'bW')) && search('^"PO-Revision-Date:')
 		silent! exe 's/^\("PO-Revision-Date:\).*$/\1 ' . strftime("%Y-%m-%d %H:%M%z") . '\\n"'
 	endif
 
