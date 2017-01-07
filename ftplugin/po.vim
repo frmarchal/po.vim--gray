@@ -33,7 +33,6 @@
 "     Remove the fuzzy label                              \Z
 "     Show msgfmt statistics for the file(*)              \s
 "     Browse through msgfmt errors for the file(*)        \e
-"     Put the translator info in the header               \t
 "     Put the lang. team info in the header               \l
 "     Format the whole file(wrap the lines etc.)          \W
 "     -------------------------------------------------------
@@ -277,10 +276,8 @@ endif
 
 " Add translator info in the file header.
 if !hasmapto('<Plug>TranslatorInfo')
-	imap <buffer> <unique> <LocalLeader>t <Plug>TranslatorInfo
 	nmap <buffer> <unique> <LocalLeader>t <Plug>TranslatorInfo
 endif
-inoremap <buffer> <unique> <Plug>TranslatorInfo <ESC>:call <SID>AddHeaderInfo('person')<CR>i
 nnoremap <buffer> <unique> <Plug>TranslatorInfo :call <SID>AddHeaderInfo('person')<CR>
 
 " Add language team info in the file header.
