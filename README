@@ -4,7 +4,7 @@ This script is a fork of Aleksandar Jelenak's script further modified by Gray Gr
 
 It is a ftplugin for PO file (GNU gettext) editing.
 
-Gray Grissim fixed two bugs and added three other functions and remapped the keys.
+Gray Grissiom fixed two bugs and added three other functions and remapped the keys.
 
 I fixed a bug preventing the PO-Revision-Date from being updated on some po files. I also changed
 some shortcuts.
