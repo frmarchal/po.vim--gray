@@ -1,3 +1,12 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=2530
 
-This script is a fork version of Aleksandar Jelenak's script. It's a ftplugin for PO file (GNU gettext) editing. I fixed two bugs and add three other functions and remapped the keys. Thanks to Aleksandar Jelenak a lot. Detailed description can be found in the source file.
+This script is a fork of Aleksandar Jelenak's script further modified by Gray Grissiom.
+
+It is a ftplugin for PO file (GNU gettext) editing.
+
+Gray Grissim fixed two bugs and added three other functions and remapped the keys.
+
+I fixed a bug preventing the PO-Revision-Date from being updated on some po files. I also changed
+some shortcuts.
+
+Thanks to Aleksandar Jelenak and Gray Grissiom a lot. Detailed description can be found in the source file.
