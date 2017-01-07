@@ -29,8 +29,8 @@
 "     Delete the msgstr string                            \d
 "     Move to the next fuzzy translation                  \f
 "     Move to the previous fuzzy translation              \F
-"     Label the translation fuzzy                         \z
-"     Remove the fuzzy label                              \Z
+"     Label the translation fuzzy                         \Z
+"     Remove the fuzzy label                              \z
 "     Show msgfmt statistics for the file(*)              \s
 "     Browse through msgfmt errors for the file(*)        \e
 "     Put the lang. team info in the header               \l
@@ -49,8 +49,8 @@
 "     Move to an untransl. string backward                \U
 "     Move to the next fuzzy translation                  \f
 "     Move to the previous fuzzy translation              \F
-"     Label the translation fuzzy                         \z
-"     Remove the fuzzy label                              \Z
+"     Label the translation fuzzy                         \Z
+"     Remove the fuzzy label                              \z
 "     Split-open the file under cursor                    gf
 "     Show msgfmt statistics for the file(*)              \s
 "     Browse through msgfmt errors for the file(*)        \e
@@ -200,8 +200,8 @@ nnoremap <buffer> <unique> <Plug>PreviousFuzzy {?^#,\(.*,\)\=\s*fuzzy<CR>:let @/
 
 " Insert fuzzy description for the translation.
 if !hasmapto('<Plug>InsertFuzzy')
-	imap <buffer> <unique> <LocalLeader>z <Plug>InsertFuzzy
-	nmap <buffer> <unique> <LocalLeader>z <Plug>InsertFuzzy
+	imap <buffer> <unique> <LocalLeader>Z <Plug>InsertFuzzy
+	nmap <buffer> <unique> <LocalLeader>Z <Plug>InsertFuzzy
 endif
 inoremap <buffer> <unique> <Plug>InsertFuzzy <ESC>{vap:call <SID>InsertFuzzy()<CR>gv<ESC>}i
 nnoremap <buffer> <unique> <Plug>InsertFuzzy {vap:call <SID>InsertFuzzy()<CR>gv<ESC>}
@@ -226,8 +226,8 @@ endf
 
 " Remove fuzzy description from the translation.
 if !hasmapto('<Plug>RemoveFuzzy')
-	imap <buffer> <unique> <LocalLeader>Z <Plug>RemoveFuzzy
-	nmap <buffer> <unique> <LocalLeader>Z <Plug>RemoveFuzzy
+	imap <buffer> <unique> <LocalLeader>z <Plug>RemoveFuzzy
+	nmap <buffer> <unique> <LocalLeader>z <Plug>RemoveFuzzy
 endif
 inoremap <buffer> <unique> <Plug>RemoveFuzzy <ESC>{vap:call <SID>RemoveFuzzy()<CR>i
 nnoremap <buffer> <unique> <Plug>RemoveFuzzy {vap:call <SID>RemoveFuzzy()<CR>
